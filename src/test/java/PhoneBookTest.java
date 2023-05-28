@@ -41,7 +41,7 @@ public class PhoneBookTest {
     public void testPrintAllNames(){
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Павел", "555105533");
-        phoneBook.add("Алексей", "555105533");
+        phoneBook.add("Алексей", "555105993");
         List expected=new ArrayList<>();
         expected.add("Алексей");
         expected.add("Павел");
