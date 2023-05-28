@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -21,6 +20,6 @@ public class PhoneBook {
     }
 
     public String findByName(String name) {
-        return null;
+        return book.get(name);
     }
 }
