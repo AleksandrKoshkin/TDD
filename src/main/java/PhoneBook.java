@@ -1,8 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class PhoneBook {
-    public  Map<String, String> book = new HashMap<>();
+    public  Map<String, String> book = new TreeMap<>();
     public  int contact = 0;
 
     public  Integer add(String name, String phone) {
@@ -15,6 +16,6 @@ public class PhoneBook {
         }
     }
     public  String findByNumber(String phone){
-        return  null;
+        return book.entrySet().stream().filter((x)->x.getValue().equals(phone)).map(Map.Entry::getKey).findFirst().get();
     }
 }
